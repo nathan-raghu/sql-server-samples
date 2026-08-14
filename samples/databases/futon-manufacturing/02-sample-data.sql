@@ -116,7 +116,8 @@ INSERT INTO Items (ItemCode, ItemName, ItemTypeID, UnitID, Description, Standard
 ('FG-FUT-005', 'Full Comfort Futon - Chocolate Suede', @FinishedGoodType, @EachUnit, 'Full futon with cotton mattress, chocolate suede, oak frame', 0, 499.99, 7, 3, 10),
 ('FG-FUT-006', 'Queen Luxury Futon - Linen Beige', @FinishedGoodType, @EachUnit, 'Queen futon with memory foam mattress, linen blend, walnut frame', 0, 899.99, 4, 2, 10);
 
-GO
+-- Commented this GO statement. It is causing the @PoundUnit, @YardUnit variable to get invalidated and causing the insert queries (below) to fail
+--GO
 
 -- =============================================
 -- Bill of Materials - Multi-Level
